@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id ("kotlin-parcelize")
 }
 
 android {
@@ -50,6 +51,11 @@ android {
 }
 
 dependencies {
+
+    implementation("com.arkivanov.decompose:decompose:2.2.0")
+    implementation("com.arkivanov.decompose:extensions-compose-jetpack:2.1.2")
+    implementation("com.arkivanov.essenty:parcelable:1.3.0")
+    implementation("com.arkivanov.essenty:state-keeper:1.3.0")
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2")
